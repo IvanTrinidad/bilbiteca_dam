@@ -34,4 +34,14 @@ public class Biblioteca {
         }
         System.out.println("Libro no encontrado: " + titulo);
     }
+
+    public void devolverLibro(String titulo) {
+        for (int i = 0; i < contador; i++) {
+            if (libros[i].getTitulo().equalsIgnoreCase(titulo)) {
+                System.out.println("Libro devuelto: " + titulo);
+                return;
+            }
+        }
+        System.out.println("Libro no encontrado: " + titulo);
+    }
 }
