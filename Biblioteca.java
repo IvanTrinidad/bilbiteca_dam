@@ -16,4 +16,12 @@ public class Biblioteca {
             System.out.println("La biblioteca está llena.");
         }
     }
+
+    public void mostrarLibros() {
+        System.out.println("--- Catálogo de la biblioteca ---");
+        for (int i = 0; i < contador; i++) {
+            System.out.println((i + 1) + ". " + libros[i].getTitulo()
+                    + " - " + libros[i].getAutor());
+        }
+    }
 }
